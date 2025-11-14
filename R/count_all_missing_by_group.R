@@ -44,7 +44,7 @@ count_all_missing_by_group <- function(data, group_col, .groups = "drop") {
 
 ## Examples
 
-# This example computes the number of missing values in the `airquality` dataset grouped by the `cyl` column.
+# 1: This example computes the number of missing values in the `airquality` dataset grouped by the `cyl` column.
 
 count_all_missing_by_group(airquality, Month)
 
