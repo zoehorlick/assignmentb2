@@ -1,4 +1,4 @@
-#' Count missing values for all columns by group
+#' Count Missing Values for All Columns by Group
 #'
 #' @description Given a data frame `data` and a
 #' column `group`, `count_all_missing_by_group()` creates
@@ -40,7 +40,7 @@ count_all_missing_by_group <- function(data, group_col, .groups = "drop") {
   data |>
     dplyr::group_by({{ group_col }}) |>
     dplyr::summarize(
-      dplyr::across(everything(), ~sum(is.na(.x))),
+      dplyr::across(dplyr::everything(), ~sum(is.na(.x))),
               .groups = .groups)
 }
 

@@ -2,7 +2,7 @@
 % Please edit documentation in R/count_all_missing_by_group.R
 \name{count_all_missing_by_group}
 \alias{count_all_missing_by_group}
-\title{Count missing values for all columns by group}
+\title{Count Missing Values for All Columns by Group}
 \usage{
 count_all_missing_by_group(data, group_col, .groups = "drop")
 }
