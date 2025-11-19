@@ -48,6 +48,7 @@ count_all_missing_by_group(airquality, Month)
 
 ``` r
 # Example 2: This example has the same output as the last example, but shows off an alternative way of invoking the `count_all_missing_by_group()`: piping the dataset into the function. 
+
 airquality |>
   count_all_missing_by_group(Month)
 #> # A tibble: 5 × 6
@@ -62,6 +63,7 @@ airquality |>
 
 ``` r
 # Example 3: The optional `.groups` argument allows us to keep the output grouped by the grouping column. 
+
 count_all_missing_by_group(airquality, Month, .groups = "keep")
 #> # A tibble: 5 × 6
 #> # Groups:   Month [5]
