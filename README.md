@@ -10,8 +10,11 @@
 The goal of **assignmentb2** is to demonstrate how to wrap and document
 a function in an R package. This package uses the pre-baked function
 `count_all_missing_by_group()` provided by the STAT 545 instructional
-team. The function counts the missing values in a dataset and is grouped
-by a chosen variable.
+team. Given a data frame `data` and a column `group`,
+`count_all_missing_by_group()` creates a new data frame with one row per
+level of `group`. The first column of the output data frame contains the
+levels of `group`, and the rest of the columns contain the number of
+missing values for all columns in `data` except `group`
 
 ## Installation
 
