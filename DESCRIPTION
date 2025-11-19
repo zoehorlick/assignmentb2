@@ -3,7 +3,7 @@ Title: Count Missing Values for All Columns by Group
 Version: 0.1.3
 Authors@R: 
     person("Zoe", "Horlick", email = "zoehorlick@icloud.com", role = c("aut", "cre"))
-Description: This package uses a wrapper around `dplyr` functions which enables users to count missing values for all columns by group in a data frame. This package is used for educational purposes in STAT 545 B for learning how to create, document and test a function inside an R package.
+Description: Given a data frame `data` and a column `group`, `count_all_missing_by_group()` creates a new data frame with one row per level of `group`. The first column of the output data frame contains the levels of `group`, and the rest of the columns contain the number of missing values for all columns in `data` except `group`
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
