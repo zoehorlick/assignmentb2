@@ -38,3 +38,14 @@ This function is
 a wrapper around the \code{group_by()} and
 \code{summarize()} functions in the \code{dplyr} package.
 }
+\examples{
+# Use the airquality dataset, grouping by "Month"
+count_all_missing_by_group(airquality, Month)
+
+# Alternative piping syntax
+airquality |> count_all_missing_by_group(Month)
+
+# Using the optional .groups argument
+count_all_missing_by_group(airquality, Month, .groups = "keep")
+
+}

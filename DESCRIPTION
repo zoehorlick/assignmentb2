@@ -1,12 +1,16 @@
 Package: assignmentb2
 Title: Count Missing Values for All Columns by Group
-Version: 0.1.0
+Version: 0.1.3
 Authors@R: 
     person("Zoe", "Horlick", email = "zoehorlick@icloud.com", role = c("aut", "cre"))
-Description: This package uses a wrapper around `dplyr` that counts missing values for all columns by group of a data frame. This package is used for educational purposes in STAT 545 for learning how to wrap and document a function inside an R package.
+Description: This package uses a wrapper around `dplyr` functions which enables users to count missing values for all columns by group in a data frame. This package is used for educational purposes in STAT 545 B for learning how to create, document and test a function inside an R package.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.3
 Imports:
     dplyr
+Suggests: 
+    testthat (>= 3.0.0),
+    tibble
+Config/testthat/edition: 3
