@@ -23,7 +23,7 @@ You can install the development version of assignmentb2 from
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("zoehorlick/assignmentb2", ref = "v0.1.3")
+devtools::install_github("zoehorlick/assignmentb2", ref = "1.0.0")
 ```
 
 ## Examples
